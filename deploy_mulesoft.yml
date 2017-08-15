@@ -1,0 +1,5 @@
+---
+- name: Deploy Mulesoft applications
+  hosts: localhost
+  roles:
+    - { role: deploy, tags: ["deploy"] }

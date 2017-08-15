@@ -1,0 +1,12 @@
+- name: Deploy Mulesoft applications to CloudHub
+  shell: |
+    echo 
+    echo "#######################################################################################"
+    echo "MuleSoft CloudHub User : {{ cloudhub_user }}"
+    echo "MuleSoft CloudHub Environment : {{ cloudhub_environment }}"
+    echo "MuleSoft CloudHub Application Name : {{ cloudhub_application_name }}"
+    echo "#######################################################################################"
+    echo
+    # Deployment steps go here
+  args:
+    chdir: "{{ workspace_dir }}"
